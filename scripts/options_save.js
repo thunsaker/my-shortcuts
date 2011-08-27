@@ -62,15 +62,15 @@ function save_options() {
 	checkBox = document.getElementById("chk_voice");
 	localStorage["voice"] = checkBox.checked;
 
-	checkBox = document.getElementById("chk_wave");
-	localStorage["wave"] = checkBox.checked;
+	checkBox = document.getElementById("chk_plus");
+	localStorage["plus"] = checkBox.checked;
 
-	var googleWaveUrl = document.getElementById("txt_google_wave_url");
-	if(googleWaveUrl.value != ""){
-		localStorage["google_wave_url"] = googleWaveUrl.value;
+	var googleplusUrl = document.getElementById("txt_google_plus_url");
+	if(googleplusUrl.value != ""){
+		localStorage["google_plus_url"] = googleplusUrl.value;
 	}
 	else
-		localStorage["google_wave_url"] = "";
+		localStorage["google_plus_url"] = "";
 
 	// Google Apps for your domain options
 	var googleAppsUrl = document.getElementById("txt_google_apps_url");
@@ -161,8 +161,7 @@ function restore_options() {
 	// Restore other links
 	document.getElementById("chk_reader").checked = (localStorage.getItem("reader") == "true");
 	document.getElementById("chk_voice").checked = (localStorage.getItem("voice") == "true");
-	document.getElementById("chk_wave").checked = (localStorage.getItem("wave") == "true");
-	document.getElementById("txt_google_wave_url").value = localStorage.getItem("google_wave_url");
+	document.getElementById("chk_plus").checked = (localStorage.getItem("plus") == "true");
 	
 	// Restore Custom Links
 	document.getElementById("sel_custom_location").value = localStorage.getItem("custom_location");

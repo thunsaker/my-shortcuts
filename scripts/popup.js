@@ -126,8 +126,8 @@ function init(){
 	else
 		options.style.display = 'block';
 
-	options = document.getElementById("div_wave");
-	if(localStorage["wave"] == "true")
+	options = document.getElementById("div_plus");
+	if(localStorage["plus"] == "true")
 		options.style.display = 'none';
 	else
 		options.style.display = 'block';
@@ -143,7 +143,7 @@ function init(){
 		if(localStorage["docs"] == "false" || localStorage["docs_new_document"] == "false" || localStorage["docs_new_spreadsheet"] == "false" || localStorage["docs_new_presentation"] == "false")
 			document.getElementById("div_docs_hr").style.display = 'block';
 	
-		if(localStorage["reader"] == "false" || localStorage["voice"] == "false" || localStorage["wave"] == "false")
+		if(localStorage["reader"] == "false" || localStorage["voice"] == "false" || localStorage["plus"] == "false")
 			document.getElementById("div_other_hr").style.display = 'block';
 		
 		if(localStorage["custom1"] == "true" || localStorage["custom2"] == "true" || localStorage["custom3"] == "true" || localStorage["custom4"] == "true" || localStorage["custom5"] == "true") {
@@ -315,11 +315,8 @@ function openLink(service, page) {
 		case "voice" :
 			url = "http://voice.google.com/";
 			break;
-		case "wave" :
-			if(localStorage["google_wave_url"] != "" && localStorage["google_wave_url"] != null)
-				url = "http://wave.google.com/wave/" + localStorage["google_wave_url"].replace("http://wave.google.com/wave/","");
-			else
-				url = "http://wave.google.com/";
+		case "plus" :
+			url = "http://plus.google.com/";
 			break;
 		case "site" :
 			if(localStorage["google_apps_url"] != "" && localStorage["google_apps_url"] != null)
