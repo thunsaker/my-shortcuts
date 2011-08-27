@@ -1,0 +1,10 @@
+{
+	"extName": {
+		"message": "Accesos Directos de Mi",
+		"description": "Extension Name."
+	},
+	"extDescription": {
+		"message": "Una extension sencilla que se usa para crear un nuevo email, evento, o documento de Google Docs.",
+		"description": "Description of the Application."
+	}
+}
