@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>My Shortcuts</title>
+<script type="text/javascript" src="scripts/options_save.js"></script>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body onload="restore_options()" class="options_margin">
+	<img src="icons/my-shortcuts-icon-48.png">
+	<span id="span_header" class="header">
+		My Shortcuts&nbsp
+	</span>
+	<p class="version">v.2.5.11</p>
+	
+	<div class="main_wrapper">
+		<div id="div_column_wrapper" class="column_wrapper">
+				<div class="left_column">
+					<span class="subheader">Show/Hide Options</span>
+					<div class="column_inner_wrapper">
+						<img src="icons/icon-gmail.png">
+						<input id="chk_gmail" type="checkbox" />Hide Gmail&#153;<br />
+						<img src="icons/icon-gmail.png">
+						<input id="chk_gmail_new" type="checkbox" />Hide New Email 
+						<span class="small_text">(<input id="chk_gmail_new_new_window" type="checkbox" /> new window)</span><br />
+						<img src="icons/icon-contacts-from-docs.png">
+						<input id="chk_contacts" type="checkbox" />Hide Google Contacts&#153;
+						<span class="small_text">(<input id="chk_contacts_new_format" type="checkbox" /> new format)</span><br />
+						<img src="icons/icon-tasks.png">
+						<input id="chk_tasks" type="checkbox" />Hide Google Tasks&#153;<br /><br />
+						<img src="icons/icon-buzz.png">
+						<input id="chk_buzz" type="checkbox" />Hide Google Buzz&#153;<br /><br />
+	
+						<img src="icons/icon-calendar.png">
+						<input id="chk_calendar" type="checkbox" />Hide Google Calendar&#153;<br />
+						<img src="icons/icon-calendar.png">
+						<input id="chk_calendar_new" type="checkbox" />Hide New Event 
+						<span class="small_text">(<input id="chk_calendar_new_new_window" type="checkbox" /> new window)</span><br /><br />
+					</div>
+				</div>
+				<div class="left_column">
+					<div class="column_inner_wrapper">
+						<img src="icons/icon-docs-16.png">
+						<input id="chk_docs" type="checkbox" />Hide Google Docs&#153;<br />
+						<img src="icons/icon-document-new-format.png">
+						<input id="chk_docs_new_document" type="checkbox" />Hide New Document 
+						<span class="small_text">(<input id="chk_docs_new_document_old_format" type="checkbox" /> old format)</span><br />
+	
+						<img src="icons/icon-spreadsheet.png">
+						<input id="chk_docs_new_spreadsheet" type="checkbox" />Hide New Spreadsheet<br />
+	
+						<img src="icons/icon-form.png">
+						<input id="chk_docs_new_form" type="checkbox" />Hide New Form<br />
+	
+						<img src="icons/icon-drawing.png">
+						<input id="chk_docs_new_drawing" type="checkbox" />Hide New Drawing<br />
+	
+						<img src="icons/icon-presentation.png">
+						<input id="chk_docs_new_presentation" type="checkbox" />Hide New Presentation<br />
+	
+						<img src="icons/icon-template.png">
+						<input id="chk_docs_new_from_template" type="checkbox" />Hide New From Template<br /><br />
+	
+						<img src="icons/icon-reader.png">
+						<input id="chk_reader" type="checkbox" />Hide Google Reader&#153;<br />
+						<img src="icons/icon-voice.png">
+						<input id="chk_voice" type="checkbox" />Hide Google Voice&#153;<br />
+						<img src="icons/icon-wave.png">
+						<input id="chk_wave" type="checkbox" />Hide Google Wave&#153;<br /> 
+						<span id="span_wave_custom_url" style="padding-left:25px;">
+							Custom Url: <input id="txt_google_wave_url" type="text" />
+						</span><br />
+					</div>
+				</div>
+				
+			<!-- Custom Links -->
+			<div class="right_column">
+				<div class="column_inner_wrapper">
+					<span class="subheader">
+						Custom Links (<span class="greyText">http://example.com</span>)
+						<select id="sel_custom_location">
+							<option value="top">Top</option>
+							<option value="bottom" selected="selected">Bottom</option>
+						</select>
+					</span>
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom0" type="checkbox" />Name: <input id="txt_custom0name" type="text" />
+					URL: <input id="txt_custom0url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom1" type="checkbox" />Name: <input id="txt_custom1name" type="text" />
+					URL: <input id="txt_custom1url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom2" type="checkbox" />Name: <input id="txt_custom2name" type="text" />
+					URL: <input id="txt_custom2url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom3" type="checkbox" />Name: <input id="txt_custom3name" type="text" />
+					URL: <input id="txt_custom3url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom4" type="checkbox" />Name: <input id="txt_custom4name" type="text" />
+					URL: <input id="txt_custom4url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom5" type="checkbox" />Name: <input id="txt_custom5name" type="text" />
+					URL: <input id="txt_custom5url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom6" type="checkbox" />Name: <input id="txt_custom6name" type="text" />
+					URL: <input id="txt_custom6url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom7" type="checkbox" />Name: <input id="txt_custom7name" type="text" />
+					URL: <input id="txt_custom7url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom8" type="checkbox" />Name: <input id="txt_custom8name" type="text" />
+					URL: <input id="txt_custom8url" type="text" size="31" /><br />
+					
+					<img src="icons/icon-custom-add.png">
+					<input id="chk_custom9" type="checkbox" />Name: <input id="txt_custom9name" type="text" />
+					URL: <input id="txt_custom9url" type="text" size="31" /><br />
+				</div>
+			</div>
+		</div>
+		<br />
+		<div id="div_other_options_wrapper" class="other_options_wrapper">
+			<div id="div_gafyd" class="other_options">
+				<span class="subheader">Google Apps&#153; for Your Domain</span>
+				<ul>
+					<img src="icons/icon-world.png">
+					Domain url (example.com): <input id="txt_google_apps_url" type="text" />
+					<a href="#" onclick="clear_apps_url()">clear</a><br />
+					
+					<input id="chk_google_apps_url" type="checkbox" /> Hide Domain Url from Popup
+				</ul>
+			</div>
+			<div id="div_other_options" class="other_options">
+				<span class="subheader">Other Options</span>
+				<ul>
+					<img src="icons/icon-lock-closed.png">
+					<input id="chk_ssl" type="checkbox" /> Use SSL (for supported sites)<br />
+	
+					<input id="chk_hr" type="checkbox" /> Hide Horizontal Rules (hr tags)<br />
+				</ul>
+			</div>
+		</div>
+
+		<a href="http://thomashunsaker.com/chrome-extensions/Feedback.aspx?item=googleappsshortcuts">Send Feedback or Report a Bug</a>
+		<br /><br />
+		<span id="span_copyright" class="copyright">
+		Some icons provided by <a href="http://www.fatcow.com/free-icons/" target="_blank">Fatcow</a>, others copyright ©<a href="http://www.google.com" target="_blank">Google Inc</a>.</span>
+	</div>
+	<div id="div_other_options" class="save">
+		<button onclick="save_options()">Save</button>
+		<span id="status">Status here: </span><br />
+	</div>
+</body>
+</html>
