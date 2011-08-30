@@ -65,13 +65,6 @@ function save_options() {
 	checkBox = document.getElementById("chk_plus");
 	localStorage["plus"] = checkBox.checked;
 
-	var googleplusUrl = document.getElementById("txt_google_plus_url");
-	if(googleplusUrl.value != ""){
-		localStorage["google_plus_url"] = googleplusUrl.value;
-	}
-	else
-		localStorage["google_plus_url"] = "";
-
 	// Google Apps for your domain options
 	var googleAppsUrl = document.getElementById("txt_google_apps_url");
 	if(googleAppsUrl.value != ""){
